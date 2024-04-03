@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Borel&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,200;10..48,300;10..48,400;10..48,500;10..48,600&family=Teko:wght@300;400;500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/16a4d2598a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+    <title>Shib 2.0</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #111;
+            font-family: Arial, sans-serif;
+        }
+
+        #container {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            height: 100vh;
+        }
+
+        #image-container {
+            flex: 100%;
+            padding: 20px;
+        }
+        h3 {
+            font-family: 'Bricolage Grotesque', sans-serif;
+        }
+
+        #image-container img {
+            max-width: 70%;
+            height: auto;
+        }
+
+        #buttons-container {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            padding: 20px;
+        }
+
+        .button {
+            margin: 5px 0;
+            padding: 10px 20px;
+            background-color: rgb(103, 231, 248);
+            color: #ffffff;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            border-radius: 8px;
+        }
+
+        .button:hover {
+            background-color: #29e668;
+        }
+
+        @media screen and (max-width: 600px) {
+            #container {
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+
+            #image-container {
+                padding: 10px;
+            }
+
+            #image-container img {
+            max-width: 80px;
+            height: auto;
+        }
+            #buttons-container {
+                align-items: center;
+            }
+          
+        }
+
+        @media screen and (max-width: 600px) {
+            #container {
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+
+            #image-container {
+                padding: 10px;
+            }
+
+            #image-container img {
+            max-width: 61%;
+            height: 100px;
+         
+        }
+            #buttons-container {
+                align-items: center;
+            }
+            .description-div > img {
+            width: 90%;
+
+        }
+      
+        }
+        .description-div > img {
+            width: 90%;
+
+        }
+      
+    </style>
+</head>
+<nav class="navbar" data-aos="fade-up" data-aos-duration="600">
+  <div class="navbar-content">
+      <a href="#" class="navbar-brand">
+        <!-- C҉N҉W҉H҉A҉L҉E҉R҉S҉ --> CNwhalers
+  </a>
+    <ul class="navbar-menu">
+      <li class="navbar-item"><a href="#">Home</a></li>
+      <li class="navbar-item"><a href="add-coin.html">Add Coin</a></li>
+      <li class="navbar-item"><a href="#">Promote</a></li>
+      <i class="fa-solid fa-bars"></i>
+    </ul> 
+    
+    <div class="navbar-actions">
+     
+      <a href="https://t.me/cnwhalers_official" target="_blank">
+      <i class="fa-brands fa-telegram fa-bounce fa-xl"></i>
+      </a>
+
+      <a href="add-coin.html">
+      <button class="btn add-coin">Add Coin</button>
+    </a>
+      <button class="btn change-language" onclick="languageBtn()">中文</button>
+      
+
+      
+
+    </div>
+  </div>
+</nav>
+<body>
+    <div id="container">
+         
+            <img src="images/shib2.png" alt="Image">
+        
+        <div class="description-div">
+         
+            <h3>Description</h3>
+            <p>Every token deserves a new beginning.</p>
+            <h4><strong>Chain: ETH</strong></h4>
+            <h4>Contract Address:</h4>
+            <p><strong>0x34ba042827996821cffeb06477d48a2ff9474483</strong></p>
+        </div>
+        <div id="buttons-container">
+         <a href="https://shib20.vip//" target="_blank"><button class="button">View Website</button></a>
+          <a href="https://t.me/shib2eth" target="_blank"><button class="button">View Telegram </button></a>    
+          <a href="https://twitter.com/shib2eth" target="_blank"><button class="button">View Twitter </button></a>  
+        </div>
+    </div>
+    <style>#dexscreener-embed{position:relative;width:100%;padding-bottom:125%;}@media(min-width:1400px){#dexscreener-embed{padding-bottom:65%;}}#dexscreener-embed iframe{position:absolute;width:100%;height:100%;top:0;left:0;border:0;}</style><div id="dexscreener-embed"><iframe src="https://dexscreener.com/ethereum/0x8249ca64BaAC07f75b042d03d77449534b2321A0?embed=1&theme=dark"></iframe></div>
+    <script>
+    var totalClicks = 0; // Total number of clicks
+      
+    var lastClickTime = null; // Last click timestamp
+
+        function handleClick() {
+            var currentTime = new Date().getTime();
+
+            // Check if enough time has passed since the last click
+            if (lastClickTime === null || currentTime - lastClickTime >= 43200000) { // 12 hours = 43,200,000 milliseconds
+                lastClickTime = currentTime;
+                totalClicks++;
+
+                document.getElementById('clickCount').textContent = totalClicks;
+                document.getElementById('lastClickTime').textContent = new Date(lastClickTime).toLocaleString();
+            } else {
+                alert("You can click the button again in 12 hours.");
+            }
+        }
+  </script>
+    <table data-aos="fade-up" data-aos-duration="400" data-aos-mirror="true" id="myTable">
+        <thead>
+          <tr>
+            <th class="row_1">💎</th>
+            <th class="row_2">PROJECT</th>
+            <th class="row_3"><i class="fa-brands fa-twitter"></i></th>
+            <th class="row_4"><i class="fa-brands fa-telegram"></i></th>
+            <th class="row_5">LAUNCH</th>
+            <th class="row_6">VOTES</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td> <img src="images/shib2.png" alt class="image-table"> </td>
+            <td> <a href="shib2.0.html" target="_blank">Shib 2.0</a></td>
+            <td>
+                <a href="https://twitter.com/shib2eth">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+             </td>
+            
+            <td>
+                <a href="https://t.me/shib2eth">
+                    <i class="fa-brands fa-telegram"></i>
+                </a>
+                <td class="col_5">2023</td>
+            <td><button id='btn1' class="upvote-btn" onclick="handleClick()">5790</button></td>
+          </tr>
+          <tr>
+            <td><img src="images/lupirium.png" alt class="image-table"></td>
+            <td> <a href="lupirium.html" target="_blank">LUPIRIUM</a></td>
+            <td>
+                <a href="https://twitter.com/lupirium_lupi">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+             </td>
+            
+            <td>
+                <a href="https://t.me/LupiriumOfficial">
+                    <i class="fa-brands fa-telegram"></i>
+                </a>
+            </td>
+            <td class="col_5">2023</td>
+            <td><button class="upvote-btn" id="btn2" onclick="handleClick()">4709</button></td>
+          </tr>
+      
+          <tr>
+            <td><img src="images/thedons.jpg" alt class="image-table"></td>
+            <td><a href="thedons.html" target="_blank">The DONS</a></td>
+            <td>
+                <a href="https://twitter.com/thedonscoin">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+             </td>
+            
+            <td>
+                <a href="https://t.me/thedonsbnb">
+                    <i class="fa-brands fa-telegram"></i>
+                </a>
+                </td>
+                <td class="col_5">2023</td>
+            <td><button class="upvote-btn" id="btn3" onclick="handleClick()">6763</button></td>
+          </tr>
+          
+          <!-- Add more rows as needed -->
+          <tr>
+            <td><img src="images/brown.jpg" alt class="image-table"></td>
+            <td><a href="brown.html" target="_blank">Brown</a></td>
+            <td>
+                <a href="https://twitter.com/BROWN_ERC20">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+             </td>
+            
+            <td>
+                <a href="https://t.me/BROWNeth20">
+                    <i class="fa-brands fa-telegram"></i>
+                </a>
+                </td>
+                <td class="col_5">2023</td>
+            <td><button class="upvote-btn" id="btn4" onclick="handleClick()">411</button></td>
+          </tr>
+          <tr>
+            <td><img src="images/dogecn.jpg" alt class="image-table"></td>
+             <td><a href="dogecn.html">DogeCoin</a></td>
+            <td>
+                <a href="https://twitter.com/sendit_eth?s=20">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+             </td>
+            
+            <td>
+                <a href="https://t.me/senditapp">
+                    <i class="fa-brands fa-telegram"></i>
+                </a>
+                </td>
+                <td class="col_5">2024</td>
+            <td><button class="upvote-btn" id="btn5" onclick="handleClick()">221</button></td>
+          </tr>
+         
+        
+          <tr>
+            <td><img src="images/x.jpg" alt class="image-table"></td>
+            <td><a href="x.html">X</a></td>
+            <td>
+                <a href="https://twitter.com/X_project_ERC">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+             </td>
+            
+            <td>
+                <a href="https://t.me/Xerc20">
+                    <i class="fa-brands fa-telegram"></i>
+                </a>
+                </td>
+                <td class="col_5">2023</td>
+            <td><button class="upvote-btn" id="btn9" onclick="handleClick()">924</button></td>
+          </tr>
+          <tr>
+            <td><img src="images/bitrock_logo.jpg" alt class="image-table"></td>
+            <td><a href="bitrock.html">Bitrock</a></td>
+            <td>
+                <a href="https://t.me/bitrockchain">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+             </td>
+            
+            <td>
+                <a href="https://t.me/bitrockchain">
+                    <i class="fa-brands fa-telegram"></i>
+                </a>
+                </td>
+                <td class="col_5">2024</td>
+            <td><button class="upvote-btn" id="btn10" onclick="handleClick()">3690</button></td>
+          </tr>
+
+        </tbody>
+      </table>
+      
+  <footer>
+    <p> &copy; 2023 CNWHALERS All Right Reserved.</p>
+    <nav>
+      <h3>Quick Links</h3>
+      <a href="index.html">Home</a>
+      <a href="partnership.html">Parterships</a>
+      <a href="all-projects.html">All Projects</a>
+      <a href="contact.html">Contact</a>
+  </nav>
+  <div class="footer-socials">
+      <a href="https://t.me/cnwhalers" target="_blank">
+          <i class="fa-brands fa-telegram fa-bounce fa-2xl"></i>
+          </a>
+  
+          <a href="https://youtube.com/@Cn_whalers" target="_blank">
+              <i class="fa-brands fa-youtube fa-beat-fade fa-2xl"></i>
+              </a>
+  
+              <a href="/cdn-cgi/l/email-protection#afcecbc2c6c1efccc1d8c7cec3cadddc81ccc0c2" target="_blank">
+                  <i class="fa-regular fa-envelope fa-spin fa-2xl"></i></i>
+                  </a>    
+  
+                  <a href="https://t.me/chineseWhalers_Support">
+                      <i class="fa-solid fa-headset fa-shake fa-2xl"></i>
+                      </a>  
+  
+                  <a href="https://t.me/cnwhalers_group">
+                      <i class="fa-solid fa-people-group fa-fade fa-2xl"></i>      
+                      </a>      
+                  </div>
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+      function increaseUpvotes(button) {
+      var count = parseInt(button.textContent);
+      count++;
+      button.textContent = count;
+    }
+  </script>
+  <style>
+    footer {
+              background-color: #161616;
+              color: #fff;
+              padding: 20px;
+              text-align: center;
+          }
+  
+          footer a {
+              display: block; /* Display links as blocks */
+              color: #fff;
+              text-decoration: none;
+              margin-bottom: 10px; /* Add margin between links */
+          }
+          .footer-socials > a {
+              display: inline;
+              padding-left: 16px;
+          }
+  </style>
+  </footer>
+</body>
+
+  
+</html>

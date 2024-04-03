@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Projects</title>
+    <link rel="stylesheet" href="styles.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
+    <script src="https://kit.fontawesome.com/16a4d2598a.js" crossorigin="anonymous"></script>
+    <script src="//cdn.conveythis.com/javascript/conveythis-initializer.js"></script>
+    <script src="script.js"></script>
+<script type="text/javascript">
+	document.addEventListener("DOMContentLoaded", function(e) {
+		ConveyThis_Initializer.init({
+			api_key: "pub_61aecbd2d13bc2d752ada3635f93dbb7"
+		});
+	});
+</script>
+</head>
+<nav class="navbar" data-aos="fade-up" data-aos-duration="600">
+    <div class="navbar-content">
+        <a href="#" class="navbar-brand">
+          <!-- C҉N҉W҉H҉A҉L҉E҉R҉S҉ --> CNwhalers
+    </a>
+      <ul class="navbar-menu">
+        <li class="navbar-item"><a href="index.html">Home</a></li>
+        <li class="navbar-item"><a href="add-coin.html">Add Coin</a></li>
+        <li class="navbar-item"><a href="#">Promote</a></li>
+        <i class="fa-solid fa-bars"></i>
+      </ul> 
+      <div class="navbar-actions">
+        <a href="https://t.me/cnwhalers_official" target="_blank">
+        <i class="fa-brands fa-telegram fa-bounce fa-xl"></i>
+        </a>
+
+        <a href="add-coin.html">
+        <button class="btn add-coin">Add Coin</button>
+      </a>
+        <button class="btn change-language" onclick="languageBtn()">中文</button>
+        
+        
+        
+        
+
+      </div>
+    </div>
+  </nav>
+ <body>
+  
+<style>
+ .ticker-container {
+  display: flex;
+  overflow: hidden;
+}
+
+.ticker-item {
+  flex: 1;
+  white-space: nowrap;
+  padding: 10px;
+  /* Additional styling for each ticker item */
+  font-weight: bold;
+
+}
+
+</style>
+
+<script>
+ // Initialize the ticker position and index
+// Initialize the ticker position and index
+var position = 0;
+var index = 0;
+var tickerWidth = document.getElementById("ticker").offsetWidth;
+
+// Function to update the ticker text and scroll it
+function updateTicker() {
+  var ticker = document.getElementById("ticker");
+  var tickerItems = ticker.getElementsByClassName("ticker-item");
+
+  if (position <= -tickerItems[index].offsetWidth) {
+    // Move to the next item
+    index = (index + 1) % tickerItems.length;
+    position = tickerWidth;
+  } else {
+    // Scroll the ticker by decrementing the position
+    position--;
+  }
+
+  ticker.style.transform = "translateX(" + position + "px)";
+  requestAnimationFrame(updateTicker);
+}
+
+// Start the ticker
+updateTicker();
+
+
+
+</script>
+
+
+    <input type="text" id="searchInput" placeholder="Search...">
+    <table data-aos="fade-up" data-aos-duration="600" data-aos-mirror="true" id="myTable-3"> 
+        <thead>
+          <tr>
+            <th class="row_1">💎</th>
+            <th class="row_2">PROJECT</th>
+            <th class="row_3">TWITTER</th>
+            <th class="row4_">TELEGRAM</th>
+            <th class="row_5">LAUNCH</th>
+            <th class="row_6">VOTES</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td> <img src="images/Defido.jpg" alt class="image-table"> </td>
+            <td> <a href="Defido.html" target="_blank">Defido</a></td>
+            <td>
+                <a href="https://twitter.com/baseDeFid">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+             </td>
+            
+            <td>
+                <a href="https://t.me/baseDeFidon">
+                    <i class="fa-brands fa-telegram"></i>
+                </a>
+                <td class="col_5">2023</td>
+            <td><button class="upvote-btn" id="btn21" onclick="handleClick()">21</button></td>
+          </tr>
+        <tr>
+          <td><img src="images/ai.jpg" alt class="image-table"></td>
+          <td> <a href="ai.html" target="_blank">AIcom</a></td>
+          <td>
+              <a href="https://twitter.com/aidotcomcoin">
+                  <i class="fa-brands fa-twitter"></i>
+              </a>
+           </td>
+          
+          <td>
+              <a href="https://t.me/aidotcomcoin">
+                  <i class="fa-brands fa-telegram"></i>
+              </a>
+          </td>
+          <td class="col_5">2023</td>
+          <td><button class="upvote-btn" id="btn22"onclick="handleClick()">22</button></td>
+        </tr>
+        <tr>
+          <td><img src="images/brown.jpg" alt class="image-table"></td>
+          <td><a href="brown.html" target="_blank">Brown</a></td>
+          <td>
+              <a href="https://twitter.com/BROWN_ERC20">
+                  <i class="fa-brands fa-twitter"></i>
+              </a>
+           </td>
+          
+          <td>
+              <a href="https://t.me/BROWNeth20">
+                  <i class="fa-brands fa-telegram"></i>
+              </a>
+              </td>
+              <td class="col_5">2023</td>
+          <td><button class="upvote-btn" id="btn23" onclick="handleClick()">23</button></td>
+        </tr>
+        
+        <!-- Add more rows as needed -->
+        <tr>
+            <td><img src="images/thedons.jpg" alt class="image-table"></td>
+            <td><a href="thedons.html" target="_blank">The DONS</a></td>
+            <td>
+                <a href="https://twitter.com/thedonscoin">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+             </td>
+            
+            <td>
+                <a href="https://t.me/thedonsbnb">
+                    <i class="fa-brands fa-telegram"></i>
+                </a>
+                </td>
+                <td class="col_5">2023</td>
+            <td><button class="upvote-btn" id="btn24" onclick="handleClick()">24</button></td>
+          </tr>
+          
+          <tr>
+            <td><img src="images/Defido.jpg" alt class="image-table"></td>
+            <td><a href="Defido.html" target="_blank">Brown</a></td>
+            <td>
+                <a href="https://twitter.com/baseDeFido">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+             </td>
+            
+            <td>
+                <a href="https://t.me/baseDeFidon">
+                    <i class="fa-brands fa-telegram"></i>
+                </a>
+                </td>
+                <td class="col_5">2023</td>
+            <td><button class="upvote-btn" id="btn25" onclick="handleClick()">25</button></td>
+          </tr>
+          <tr>
+            <td><img src="images/sendit.jpg" alt class="image-table"></td>
+            <td><a href="sendit.html">Send Token</a></td>
+            <td>
+                <a href="https://twitter.com/sendit_eth?s=20">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+             </td>
+            
+            <td>
+                <a href="https://t.me/senditapp">
+                    <i class="fa-brands fa-telegram"></i>
+                </a>
+                </td>
+                <td class="col_5">2024</td>
+            <td><button class="upvote-btn" id="btn26" onclick="handleClick()">26</button></td>
+          </tr>
+        <tr>
+            <td><img src="images/mrdoge.png" alt class="image-table"></td>
+            <td> <a href="mrdoge.html" target="_blank">MR DOGE CEO</a></td>
+            <td>
+                <a href="https://twitter.com/mrdogeceo">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+             </td>
+            
+            <td>
+                <a href="https://t.me/mrdogeceo">
+                    <i class="fa-brands fa-telegram"></i>
+                </a>
+                <td class="col_5">2023</td>
+            <td><button class="upvote-btn" id="btn27" onclick="handleClick()">27</button></td>
+          </tr>
+          <tr>
+            <td><img src="images/mumu_coin.jpg" alt class="image-table"></td>
+            <td><a href="mumu.html" target="_blank">MUMU</a></td>
+            <td>
+                <a href="twitter.com/Mumu_coin">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+             </td>
+            
+            <td>
+                <a href="t.me/Mumu_coin"> 
+                    <i class="fa-brands fa-telegram"></i>
+                </a>
+                <td class="col_5">2023</td>
+            <td><button class="upvote-btn" id="btn28" onclick="handleClick()">28</button></td>
+          </tr>
+          <tr>
+            <td><img src="images/cockfight.jpg" alt class="image-table"></td>
+            <td><a href="cockfight.html">CockFight GG</a></td>
+            <td>
+                <a href="https://twitter.com/cockfightgg?s=21">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+             </td>
+            
+            <td>
+                <a href="https://t.me/cockfightgg">
+                    <i class="fa-brands fa-telegram"></i>
+                </a>
+                </td>
+                <td class="col_5">2024</td>
+            <td><button class="upvote-btn" id="btn29" onclick="handleClick()">29</button></td>
+          </tr>
+          <tr>
+            <td><img src="images/murati.jpg" alt class="image-table"></td>
+            <td><a href="murati.html">MURATI AI</a></td>
+            <td>
+                <a href="https://twitter.com/muratiAI">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+             </td>
+            
+            <td>
+                <a href="https://t.me/muratiAI">
+                    <i class="fa-brands fa-telegram"></i>
+                </a>
+                </td>
+                <td class="col_5">2024</td>
+            <td><button class="upvote-btn" id="btn30" onclick="handleClick()">30</button></td>
+          </tr>
+        <tr>
+            <td><img src="images/ruggpt.jpg" alt class="image-table"></td>
+            <td> <a href="ruggpt.html" target="_blank">RUG GPT</a></td>
+            <td>
+                <a href="https://twitter.com/ruggpteth">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+             </td>
+            
+            <td>
+                <a href="https://t.me/RugGPT_portal_ETH">
+                    <i class="fa-brands fa-telegram"></i>
+                </a>
+                <td class="col_5">2023</td>
+            <td><button class="upvote-btn" id="btn31"onclick="handleClick()">321</button></td>
+          </tr>
+          <tr>
+            <td><img src="images/quantum.jpg" alt class="image-table"></td>
+            <td> <a href="quantum.html" target="_blank">quantum wealth network</a></td>
+            <td>
+                <a href="https://twitter.com/QuantumWN">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+             </td>
+            
+            <td>
+                <a href="https://t.me/quantumwealthnetwork">
+                    <i class="fa-brands fa-telegram"></i>
+                </a>
+                <td class="col_5">2022</td>
+                <td><button class="upvote-btn" id="btn32" onclick="handleClick()">120</button></td>
+          </tr>
+          <tr>
+            <td><img src="images/toshi.jpg" alt class="image-table"></td>
+            <td> <a href="toshi.html" target="_blank">Toshi</a></td>
+            <td>
+                <a href="https://twitter.com/Toshi_base">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+             </td>
+            
+            <td>
+                <a href="https://t.me/toshibase">
+                    <i class="fa-brands fa-telegram"></i>
+                </a>
+                <td class="col_5">2023</td>
+                <td><button class="upvote-btn" id="btn33" onclick="handleClick()">20</button></td>
+          </tr>
+          <tr>
+            <td> <img src="images/wagmi.jpg" alt class="image-table"> </td>
+            <td> <a href="wagmi.html" target="_blank">WAGMI</a></td>
+            <td>
+                <a href="http://twitter.com/wagmierc">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+             </td>
+            
+            <td>
+                <a href="https://t.me/WAGMIOfficialGroup">
+                    <i class="fa-brands fa-telegram"></i>
+                </a>
+                <td class="col_5">2023</td>
+            <td><button class="upvote-btn" id="btn11" onclick="handleClick()">11</button></td>
+          </tr>
+        <tr>
+          <td><img src="images/shib2.png" alt class="image-table"></td>
+          <td> <a href="shib2.0.html" target="_blank">SHIB 2.0</a></td>
+          <td>
+              <a href="https://twitter.com/shib2eth">
+                  <i class="fa-brands fa-twitter"></i>
+              </a>
+           </td>
+          
+          <td>
+              <a href="https://t.me/shib2eth">
+                  <i class="fa-brands fa-telegram"></i>
+              </a>
+          </td>
+          <td class="col_5">2023</td>
+          <td><button class="upvote-btn" id="btn12" onclick="handleClick()">12</button></td>
+        </tr>
+        <tr>
+          <td><img src="images/paal.jpg" alt class="image-table"></td>
+          <td><a href="paal.html" target="_blank">PAAL AI</a></td>
+          <td>
+              <a href="https://twitter.com/paalmind?s=21&t=79KHC_scqRsG6xPlnKJOYg">
+                  <i class="fa-brands fa-twitter"></i>
+              </a>
+           </td>
+          
+          <td>
+              <a href="https://t.me/paal_ai">
+                  <i class="fa-brands fa-telegram"></i>
+              </a>
+              </td>
+              <td class="col_5">2023</td>
+          <td><button class="upvote-btn" id="btn13"onclick="handleClick()">13</button></td>
+        </tr>
+        
+        <!-- Add more rows as needed -->
+        <tr>
+            <td><img src="images/thedons.jpg" alt class="image-table"></td>
+            <td><a href="thedons.html" target="_blank">The DONS</a></td>
+            <td>
+                <a href="https://twitter.com/thedonscoin">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+             </td>
+            
+            <td>
+                <a href="https://t.me/thedonsbnb">
+                    <i class="fa-brands fa-telegram"></i>
+                </a>
+                </td>
+                <td class="col_5">2023</td>
+            <td><button class="upvote-btn" id="btn14" onclick="handleClick()">14</button></td>
+          </tr>
+          
+          <tr>
+            <td><img src="images/brown.jpg" alt class="image-table"></td>
+            <td><a href="brown.html" target="_blank">Brown</a></td>
+            <td>
+                <a href="https://twitter.com/BROWN_ERC20">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+             </td>
+            
+            <td>
+                <a href="https://t.me/BROWNeth20">
+                    <i class="fa-brands fa-telegram"></i>
+                </a>
+                </td>
+                <td class="col_5">2023</td>
+            <td><button class="upvote-btn" id="btn15" onclick="handleClick()">15</button></td>
+          </tr>
+          <tr>
+            <td><img src="images/sendit.jpg" alt class="image-table"></td>
+            <td><a href="sendit.html">Send Token</a></td>
+            <td>
+                <a href="https://twitter.com/sendit_eth?s=20">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+             </td>
+            
+            <td>
+                <a href="https://t.me/senditapp">
+                    <i class="fa-brands fa-telegram"></i>
+                </a>
+                </td>
+                <td class="col_5">2024</td>
+            <td><button class="upvote-btn" id="btn16" onclick="handleClick()">16</button></td>
+          </tr>
+        <tr>
+            <td><img src="images/fantasy.jpg" alt class="image-table"></td>
+            <td> <a href="fantasy.html" target="_blank">Fantasy ERC</a></td>
+            <td>
+                <a href="https://twitter.com/Fantasyerc">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+             </td>
+            
+            <td>
+                <a href="https://t.me/FantasyERC">
+                    <i class="fa-brands fa-telegram"></i>
+                </a>
+                <td class="col_5">2023</td>
+            <td><button class="upvote-btn" id="btn17" onclick="handleClick()">17</button></td>
+          </tr>
+          <tr>
+            <td><img src="images/mumu_coin.jpg" alt class="image-table"></td>
+            <td><a href="mumu.html" target="_blank">MUMU</a></td>
+            <td>
+                <a href="twitter.com/Mumu_coin">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+             </td>
+            
+            <td>
+                <a href="t.me/Mumu_coin"> 
+                    <i class="fa-brands fa-telegram"></i>
+                </a>
+                <td class="col_5">2023</td>
+            <td><button class="upvote-btn" id="btn18"onclick="handleClick()">18</button></td>
+          </tr>
+          <tr>
+            <td><img src="images/cockfight.jpg" alt class="image-table"></td>
+            <td><a href="cockfight.html">CockFight GG</a></td>
+            <td>
+                <a href="https://twitter.com/cockfightgg?s=21">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+             </td>
+            
+            <td>
+                <a href="https://t.me/cockfightgg">
+                    <i class="fa-brands fa-telegram"></i>
+                </a>
+                </td>
+                <td class="col_5">2024</td>
+            <td><button class="upvote-btn" id="btn8" onclick="handleClick()">8</button></td>
+          </tr>
+                <tr>
+                  <td><img src="images/murati.jpg" alt class="image-table"></td>
+                  <td><a href="murati.html">MURATI AI</a></td>
+                  <td>
+                      <a href="https://twitter.com/muratiAI">
+                          <i class="fa-brands fa-twitter"></i>
+                      </a>
+                   </td>
+                  
+                  <td>
+                      <a href="https://t.me/muratiAI">
+                          <i class="fa-brands fa-telegram"></i>
+                      </a>
+                      </td>
+                      <td class="col_5">2024</td>
+                  <td><button class="upvote-btn" id="btn19" onclick="handleClick()">19</button></td>
+                </tr>
+        <tr>
+            <td><img src="images/straydog.png" alt class="image-table"></td>
+            <td> <a href="dog.html" target="_blank">Stray Dog</a></td>
+            <td>
+                <a href="twitter.com/straydog">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+             </td>
+            
+            <td>
+                <a href="t.me/straydog">
+                    <i class="fa-brands fa-telegram"></i>
+                </a>
+                <td class="col_5">2023</td>
+            <td><button class="upvote-btn" id="btn20" onclick="handleClick()">20</button></td>
+          </tr>
+          <tr>
+            <td><img src="images/hmx.jpg" alt class="image-table"></td>
+            <td> <a href="hmx.html" target="_blank">HMX</a></td>
+            <td>
+                <a href="https://twitter.com/HMXorg">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+             </td>
+            
+            <td>
+                <a href="https://t.me/HMXorg">
+                    <i class="fa-brands fa-telegram"></i>
+                </a>
+                <td class="col_5">2022</td>
+                <td><button class="upvote-btn" id="btn34" onclick="handleClick()">2830</button></td>
+          </tr>
+          <tr>
+            <td><img src="images/harry.png" alt class="image-table"></td>
+            <td> <a href="HarryPotterObamaPacMan8Inu.html" target="_blank">HarryPotter<br>ObamaPac<br>Man8<br>Inu</a></td>
+            <td>
+                <a href="https://twitter.com/HPOP8I">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+             </td>
+            
+            <td>
+                <a href="https://t.me/HPOP8I">
+                    <i class="fa-brands fa-telegram"></i>
+                </a>
+                <td class="col_5">2023</td>
+                <td><button class="upvote-btn" id="btn34" onclick="handleClick()">8758</button></td>   </tr>
+
+        </tbody>
+      </table>
+      <script>
+//       Function to handle button click and increase the upvote count
+function increaseUpvotes(button) {
+  // Retrieve the total click count from localStorage or initialize it to 0 if it doesn't exist
+  var totalCount = localStorage.getItem("upvoteCount") || 0;
+
+  // Increment the count
+  totalCount++;
+
+  // Update the button text and count
+  button.textContent = totalCount;
+
+  // Store the updated count in localStorage
+  localStorage.setItem("upvoteCount", totalCount.toString());
+}
+
+// Retrieve the total click count from localStorage on page load
+window.addEventListener("load", function() {
+  var totalCount = localStorage.getItem("upvoteCount");
+
+  // Update the button text if the count exists
+  if (totalCount) {
+    var button = document.querySelector(".upvote-btn");
+    button.textContent = totalCount;
+  }
+});
+
+   
+
+     </script> 
+      
+      <script>
+        // JavaScript code for search functionality
+document.getElementById('searchInput').addEventListener('input', function() {
+    var input, filter, table, tr, td, i, txtValue;
+    input = document.getElementById('searchInput');
+    filter = input.value.toUpperCase();
+    table = document.getElementById('myTable');
+    tr = table.getElementsByTagName('tr');
+
+    // Loop through all table rows, and hide those that don't match the search query
+    for (i = 0; i < tr.length; i++) {
+        td = tr[i].getElementsByTagName('td');
+        for (var j = 0; j < td.length; j++) {
+            if (td[j]) {
+                txtValue = td[j].textContent || td[j].innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    tr[i].style.display = '';
+                    break;
+                } else {
+                    tr[i].style.display = 'none';
+                }
+            }
+        }
+    }
+});
+  
+
+      </script>
+  
+  <script>
+    function increaseUpvotes(button) {
+    var count = parseInt(button.textContent);
+    count++;
+    button.textContent = count;
+  }
+</script>
+
+ <style>
+    #searchInput {
+    width: 20%;
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-left: 22px; 
+    color: #000;
+    border-radius: 18px;
+    text-align: left;
+}
+.body {
+  background: #109ea8;
+}
+.navbar {
+    background-color: #168a07;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    margin: 0;
+    width: 100%;
+  }
+  
+  .navbar-content {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    
+  }
+
+  .navbar-brand {
+    font-weight: bold;
+    font-size: 24px;
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  .navbar-menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+  }
+  
+  .navbar-item {
+    margin-right: 10px;
+  }
+  
+  .navbar-item a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  .navbar-actions {
+    display: flex;
+    align-items: center;
+  }
+  
+  @media screen and (max-width: 900px) {
+  td.col_5{
+  display:none;
+  width:0;
+  height:0;
+  opacity:0;
+  visibility: collapse;
+}    
+th.row_5{
+  display:none;
+  width:0;
+  height:0;
+  opacity:0;
+  visibility: collapse;
+}    
+.navbar {
+  background-color: #310555;
+  padding: 10px;
+  position: sticky;
+  top: 0;
+  margin: 0;
+  width: 100%;
+  
+}
+.table {
+  width: 60%;
+}
+img {
+  width: 100%;
+}
+td.col_4{
+  width:20%;
+}
+}
+
+@media screen and (max-width: 375px) {
+  td.col_5{
+    display:none;
+    width:0;
+    height:0;
+    opacity:0;
+    visibility: collapse;
+  }    
+th.row_5{
+  display:none;
+  width:0;
+  height:0;
+  opacity:0;
+  visibility: collapse;
+}    
+.navbar {
+  background-color: #450b74;
+  padding: 10px;
+  position: sticky;
+  top: 0;
+  margin: 0;
+  width: 100%;
+}
+img {
+  width: 100%;
+}
+}
+
+@media screen and (max-width: 600px) {
+    .navbar-menu {
+      display: none;
+    }
+  }
+  @media screen and (max-width: 900px) {
+  td.col_5{
+  display:none;
+  width:0;
+  height:0;
+  opacity:0;
+  visibility: collapse;
+}    
+th.row_5{
+  display:none;
+  width:0;
+  height:0;
+  opacity:0;
+  visibility: collapse;
+}    
+.navbar {
+  background-color: #33880b;
+  padding: 10px;
+  position: sticky;
+  top: 0;
+  margin: 0;
+  width: 96%;
+  
+}
+.table {
+  width: 60%;
+}
+img {
+  width: 100%;
+}
+td.col_4{
+  width:20%;
+}
+.image-table {
+  width: 21px;
+  height: 18px;
+}
+}
+
+@media screen and (max-width: 375px) {
+  td.col_5{
+    display:none;
+    width:0;
+    height:0;
+    opacity:0;
+    visibility: collapse;
+  }    
+th.row_5{
+  display:none;
+  width:0;
+  height:0;
+  opacity:0;
+  visibility: collapse;
+}    
+.navbar {
+  background-color: #109ea8;
+  padding: 10px;
+  position: sticky;
+  top: 0;
+  margin: 0;
+  width: 100%;
+}
+img {
+  width: 100%;
+}
+
+.image-table {
+  width: 21px;
+  height: 18px;
+}
+}
+    </style>
+
+ 
+  
+    </script>
+</body>
+</html>

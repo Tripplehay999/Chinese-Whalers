@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>DOGECOIN</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #111;
+            font-family: Arial, sans-serif;
+        }
+
+        #container {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            height: 100vh;
+        }
+
+        #image-container {
+            flex: 100vh;
+            padding: 20px;
+        }
+
+        #image-container img {
+            max-width: 70%;
+            height: auto;
+        }
+
+        #buttons-container {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            padding: 20px;
+        }
+
+        .button {
+            margin: 5px 0;
+            padding: 10px 20px;
+            background-color: rgb(103, 231, 248);
+            color: #ffffff;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            border-radius: 8px;
+            z-index: 1;
+        }
+
+        .button:hover {
+            background-color: #29e668;
+        }
+
+
+        @media screen and (max-width: 600px) {
+    #container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #image-container {
+        padding: 10px;
+    }
+
+    #image-container img {
+        max-width: 40%; /* Adjust this value to resize the image */
+        height: auto;
+        margin-top: 20px;
+    }
+
+    #buttons-container {
+        align-items: center;
+    }
+
+    .description-div > img {
+        width: 90%; /* Adjust this value to resize the image within .description-div */
+    }
+}
+
+        .description-div > img {
+            width: 90%;
+
+        }
+      
+    </style>
+</head>
+<nav class="navbar" data-aos="fade-up" data-aos-duration="600">
+  <div class="navbar-content">
+      <a href="#" class="navbar-brand">
+        <!-- C҉N҉W҉H҉A҉L҉E҉R҉S҉ --> CNwhalers
+  </a>
+    <ul class="navbar-menu">
+      <li class="navbar-item"><a href="#">Home</a></li>
+      <li class="navbar-item"><a href="add-coin.html">Add Coin</a></li>
+      <li class="navbar-item"><a href="#">Promote</a></li>
+      <i class="fa-solid fa-bars"></i>
+    </ul> 
+    
+    <div class="navbar-actions">
+     
+      <a href="https://t.me/cnwhalers_official" target="_blank">
+      <i class="fa-brands fa-telegram fa-bounce fa-xl"></i>
+      </a>
+
+      <a href="add-coin.html">
+      <button class="btn add-coin">Add Coin</button>
+    </a>
+      <button class="btn change-language" onclick="languageBtn()">中文</button>
+      
+
+      
+
+    </div>
+  </div>
+</nav>
+<body>
+    <div id="container">
+         
+            <img src="images/dogecn.jpg" alt="Image">
+        
+        <div class="description-div">
+         
+            <h3>Description</h3>
+            <p>Introducing the latest sensation in the world of meme tokens - 狗狗币 $DOGECOIN! Brace yourselves for the China meme coin meta that's about to take the crypto community by storm. This innovative ERC meme token comes with a unique twist, boasting a 1/1 tax structure that ensures transparency and fairness for all holders. But that's not all, the creators of 狗狗币 $DOGECOIN have taken extra measures to instill trust in their community by burning the liquidity and renouncing ownership, solidifying their commitment to a decentralized and rug-proof ecosystem. With the potential to capture the imagination of meme enthusiasts and crypto aficionados alike, 狗狗币 $DOGECOIN promises an exciting and thrilling journey into the world of memes and decentralized finance. Get ready to embark on this exhilarating ride as the China meme coin revolution begins! </p>
+            <h4><strong>Launch : UniSwap</strong></h4>
+            <h4>Contract Address:</h4>
+            <p><strong>0xc4831af8016ee6a17ab32b56a5a5152dd1be5546</strong></p>
+        </div>
+        <div id="buttons-container">
+         <a href="https://www.dogecoin-cn.net/" target="_blank"><button class="button">View Website</button></a>
+          <a href="https://t.me/DOGECOIN_CN_ERC" target="_blank"><button class="button">View Telegram </button></a>    
+          <a href="https://twitter.com/DOGECOIN_CN" target="_blank"><button class="button">View Twitter </button></a>  
+        </div>
+    </div>
+    <style>#dexscreener-embed{position:relative;width:100%;padding-bottom:125%;}@media(min-width:1400px){#dexscreener-embed{padding-bottom:65%;}}#dexscreener-embed iframe{position:absolute;width:100%;height:100%;top:0;left:0;border:0;}</style><div id="dexscreener-embed"><iframe src="https://dexscreener.com/ethereum/0xFB4C7F4360360B88495A60E6D1B0D0Fb0bbB1A17?embed=1&theme=dark"></iframe></div><script>
+     var totalClicks = 4000; // Total number of clicks
+        var lastClickTime = null; // Last click timestamp
+
+        function handleClick() {
+            var currentTime = new Date().getTime();
+
+            // Check if enough time has passed since the last click
+            if (lastClickTime === null || currentTime - lastClickTime >= 3600000) { // 12 hours = 43,200,000 milliseconds
+                lastClickTime = currentTime;
+                totalClicks++;
+
+                document.getElementById('clickCount').textContent = totalClicks;
+                document.getElementById('lastClickTime').textContent = new Date(lastClickTime).toLocaleString();
+            } else {
+                alert("You can click the button again in 12 hours.");
+            }
+        }
+  </script>
+  <footer>
+    <p> &copy; 2023 CNWHALERS All Right Reserved.</p>
+    <nav>
+      <h3>Quick Links</h3>
+      <a href="index.html">Home</a>
+      <a href="partnership.html">Parterships</a>
+      <a href="all-projects.html">All Projects</a>
+      <a href="contact.html">Contact</a>
+  </nav>
+  <div class="footer-socials">
+      <a href="https://t.me/cnwhalers" target="_blank">
+          <i class="fa-brands fa-telegram fa-bounce fa-2xl"></i>
+          </a>
+  
+          <a href="https://youtube.com/@Cn_whalers" target="_blank">
+              <i class="fa-brands fa-youtube fa-beat-fade fa-2xl"></i>
+              </a>
+  
+              <a href="/cdn-cgi/l/email-protection#afcecbc2c6c1efccc1d8c7cec3cadddc81ccc0c2" target="_blank">
+                  <i class="fa-regular fa-envelope fa-spin fa-2xl"></i></i>
+                  </a>    
+  
+                  <a href="https://t.me/chineseWhalers_Support">
+                      <i class="fa-solid fa-headset fa-shake fa-2xl"></i>
+                      </a>  
+  
+                  <a href="https://t.me/cnwhalers_group">
+                      <i class="fa-solid fa-people-group fa-fade fa-2xl"></i>      
+                      </a>      
+                  </div>
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+      function increaseUpvotes(button) {
+      var count = parseInt(button.textContent);
+      count++;
+      button.textContent = count;
+    }
+  </script>
+  <style>
+    footer {
+              background-color: #161616;
+              color: #fff;
+              padding: 20px;
+              text-align: center;
+          }
+  
+          footer a {
+              display: block; /* Display links as blocks */
+              color: #fff;
+              text-decoration: none;
+              margin-bottom: 10px; /* Add margin between links */
+          }
+          .footer-socials > a {
+              display: inline;
+              padding-left: 16px;
+          }
+  </style>
+  </footer>
+</body>
+
+  
+</html>

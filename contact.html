@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <title>Contact Form</title>
+    <style>
+        /* Form styles */
+       body {
+        color:#333;
+        text-align: center;
+        background-color: rgb(5, 1, 15);
+
+       }
+        form {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #161616;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            color: #fff;
+        }
+
+        form label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        form input,
+        form textarea {
+            width: 70%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        form textarea {
+            height: 100px;
+        }
+
+        form button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        form button:hover {
+            background-color: #1cc51c;
+        }
+
+        /* Responsive styles */
+        @media (max-width: 600px) {
+            form {
+                max-width: 90%;
+            }
+        }
+    </style>
+</head>
+<nav class="navbar" data-aos="fade-up" data-aos-duration="600">
+    <div class="navbar-content">
+        <a href="#" class="navbar-brand">
+          <!-- C҉N҉W҉H҉A҉L҉E҉R҉S҉ --> CNwhalers
+    </a>
+      <ul class="navbar-menu">
+        <li class="navbar-item"><a href="#">Home</a></li>
+        <li class="navbar-item"><a href="add-coin.html">Add Coin</a></li>
+        <li class="navbar-item"><a href="#">Promote</a></li>
+        <i class="fa-solid fa-bars"></i>
+      </ul> 
+      
+      <div class="navbar-actions">
+       
+        <a href="https://t.me/cnwhalers_official" target="_blank">
+        <i class="fa-brands fa-telegram fa-bounce fa-xl"></i>
+        </a>
+  
+        <a href="add-coin.html">
+        <button class="btn add-coin">Add Coin</button>
+      </a>
+        <button class="btn change-language" onclick="languageBtn()">中文</button>
+        
+  
+        
+  
+      </div>
+    </div>
+  </nav>
+<body>
+    <form method="post" action="send_email.php">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+
+<footer>
+    <p> &copy; 2023 C҉N҉W҉H҉A҉L҉E҉R҉S҉ All Right Reserved.</p>
+    <nav>
+      <h3>Quick Links</h3>
+      <a href="index.html">Home</a>
+      <a href="partnership.html">Parterships</a>
+      <a href="all-projects.html">All Projects</a>
+      <a href="contact.html">Contact</a>
+  </nav>
+  <style>
+    footer {
+              background-color: #161616;
+              color: #fff;
+              padding: 20px;
+              text-align: center;
+          }
+  
+          footer a {
+              display: block; /* Display links as blocks */
+              color: #fff;
+              text-decoration: none;
+              margin-bottom: 10px; /* Add margin between links */
+          }
+  </style>
+  </footer>
+</html>

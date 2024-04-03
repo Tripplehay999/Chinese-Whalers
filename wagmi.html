@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles.css">
+    <title>WAGMI</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #111;
+            font-family: Arial, sans-serif;
+        }
+
+        #container {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            height: 100vh;
+        }
+
+        #image-container {
+            flex: 100%;
+            padding: 20px;
+        }
+
+        #image-container img {
+            max-width: 70%;
+            height: auto;
+        }
+
+        #buttons-container {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            padding: 20px;
+        }
+
+        .button {
+            margin: 5px 0;
+            padding: 10px 20px;
+            background-color: rgb(103, 231, 248);
+            color: #ffffff;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            border-radius: 8px;
+        }
+
+        .button:hover {
+            background-color: #29e668;
+        }
+
+      
+
+        @media screen and (max-width: 600px) {
+    #container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #image-container {
+        padding: 10px;
+    }
+
+    #image-container img {
+        max-width: 40%; /* Adjust this value to resize the image */
+        height: auto;
+        margin-top: 20px;
+    }
+
+    #buttons-container {
+        align-items: center;
+    }
+
+    .description-div > img {
+        width: 90%; /* Adjust this value to resize the image within .description-div */
+    }
+}
+
+        .description-div > img {
+            width: 90%;
+
+        }
+      
+    </style>
+</head>
+<nav class="navbar" data-aos="fade-up" data-aos-duration="600">
+  <div class="navbar-content">
+      <a href="#" class="navbar-brand">
+        <!-- C҉N҉W҉H҉A҉L҉E҉R҉S҉ --> CNwhalers
+  </a>
+    <ul class="navbar-menu">
+      <li class="navbar-item"><a href="#">Home</a></li>
+      <li class="navbar-item"><a href="add-coin.html">Add Coin</a></li>
+      <li class="navbar-item"><a href="#">Promote</a></li>
+      <i class="fa-solid fa-bars"></i>
+    </ul> 
+    
+    <div class="navbar-actions">
+     
+      <a href="https://t.me/cnwhalers_official" target="_blank">
+      <i class="fa-brands fa-telegram fa-bounce fa-xl"></i>
+      </a>
+
+      <a href="add-coin.html">
+      <button class="btn add-coin">Add Coin</button>
+    </a>
+      <button class="btn change-language" onclick="languageBtn()">中文</button>
+      
+
+      
+
+    </div>
+  </div>
+</nav>
+<body>
+    <div id="container">
+         
+            <img src="images/wagmi.jpg" alt="Image">
+        
+        <div class="description-div">
+         
+            <h3>Description</h3>
+            <p>WAGMI is the brilliant product of combining a Play-To-Earn game concept with a cultural acronym. “What started as a crypto internet meme, is now the official battle cry to save all mankind: WAGMI Defense, the first game of the envisioned franchise, features both versus and story mode, with full MMORPG on the roadmap. The year is 3022; Aliens have discovered the earth’s core contains NiFe, the essential element to the Alien’s survival. The Humans must defend earth, and as they claim victory, they proclaim “WAGMI,” and the gamer player earns tokens. &quot;We're All Gonna Make It!”</p>
+            <h4><strong>Chain: ETH</strong></h4>
+            <h4>Contract Address:</h4>
+            <p><strong>0x3B604747ad1720C01ded0455728b62c0d2F100F0</strong></p>
+        </div>
+        <div id="buttons-container">
+          <a href="https://www.wagmigame.io/" target="_blank"><button class="button">View Website</button></a>
+          <a href="https://t.me/WAGMIOfficialGroup" target="_blank"><button class="button">View Telegram </button></a>    
+          <a href="http://twitter.com/wagmierc" target="_blank"><button class="button">View Twitter </button></a>  
+          <a href="https://app.uniswap.org/#/swap?outputCurrency=0x3b604747ad1720c01ded0455728b62c0d2f100f0&chain=mainnet" target="_blank"><button class="button">View Presale</button></a>
+  
+        </div>
+    </div>
+    <style>#dexscreener-embed{position:relative;width:100%;padding-bottom:125%;}@media(min-width:1400px){#dexscreener-embed{padding-bottom:65%;}}#dexscreener-embed iframe{position:absolute;width:100%;height:100%;top:0;left:0;border:0;}</style><div id="dexscreener-embed"><iframe src="https://dexscreener.com/ethereum/0xdf4f3749bb4E96Bf91A67c7e873d9c04198d924A?embed=1&theme=dark"></iframe></div>
+    <script>
+     var totalClicks = 2940; // Total number of clicks
+        var lastClickTime = null; // Last click timestamp
+
+        function handleClick() {
+            var currentTime = new Date().getTime();
+
+            // Check if enough time has passed since the last click
+            if (lastClickTime === null || currentTime - lastClickTime >= 3600000) { // 12 hours = 43,200,000 milliseconds
+                lastClickTime = currentTime;
+                totalClicks++;
+
+                document.getElementById('clickCount').textContent = totalClicks;
+                document.getElementById('lastClickTime').textContent = new Date(lastClickTime).toLocaleString();
+            } else {
+                alert("You can click the button again in 12 hours.");
+            }
+        }
+  </script>
+  <footer>
+    <p> &copy; 2023 CNWHALERS All Right Reserved.</p>
+    <nav>
+      <h3>Quick Links</h3>
+      <a href="index.html">Home</a>
+      <a href="partnership.html">Parterships</a>
+      <a href="all-projects.html">All Projects</a>
+      <a href="contact.html">Contact</a>
+  </nav>
+  <div class="footer-socials">
+      <a href="https://t.me/cnwhalers" target="_blank">
+          <i class="fa-brands fa-telegram fa-bounce fa-2xl"></i>
+          </a>
+  
+          <a href="https://youtube.com/@Cn_whalers" target="_blank">
+              <i class="fa-brands fa-youtube fa-beat-fade fa-2xl"></i>
+              </a>
+  
+              <a href="https://gmail.com/admin@cnwhalers.com" target="_blank">
+                  <i class="fa-regular fa-envelope fa-spin fa-2xl"></i>
+                  </a>    
+  
+                  <a href="https://t.me/chineseWhalers_Support">
+                      <i class="fa-solid fa-headset fa-shake fa-2xl"></i>
+                      </a>  
+  
+                  <a href="https://t.me/cnwhalers_group">
+                      <i class="fa-solid fa-people-group fa-fade fa-2xl"></i>      
+                      </a>      
+                  </div>
+  <script>
+      function increaseUpvotes(button) {
+      var count = parseInt(button.textContent);
+      count++;
+      button.textContent = count;
+    }
+  </script>
+  <style>
+    footer {
+              background-color: #161616;
+              color: #fff;
+              padding: 20px;
+              text-align: center;
+          }
+  
+          footer a {
+              display: block; /* Display links as blocks */
+              color: #fff;
+              text-decoration: none;
+              margin-bottom: 10px; /* Add margin between links */
+          }
+          .footer-socials > a {
+              display: inline;
+              padding-left: 16px;
+          }
+  </style>
+  </footer>
+</body>
+
+  
+</html>

@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Borel&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,200;10..48,300;10..48,400;10..48,500;10..48,600&family=Teko:wght@300;400;500&display=swap" rel="stylesheet">
+  <title>Add Coin</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #1D263B;
+      margin: 0;
+      padding: 0;
+      font-family: 'Borel', cursive;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 50px auto;
+      padding: 20px;
+      background-color: #4CB963;
+      color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 15px;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-group label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .form-group input[type="text"],
+    .form-group input[type="url"],
+    .form-group select {
+      width: 95%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+
+    .form-group textarea {
+      width: 95%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+
+    .form-submit {
+      text-align: center;
+    }
+
+    .form-submit button {
+      padding: 10px 20px;
+      background-color: #25023a;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .form-submit button:hover {
+      background-color: #A0EADE;
+    }
+
+    a {
+      text-decoration: none;
+      font-weight: bold;
+      color: #fff;
+    }
+    option {
+      font-family: 'Teko', sans-serif;
+    }
+   option > .display {
+      font-family: 'Bricolage Grotesque', sans-serif;
+    }
+  </style>
+</head>
+
+<body>
+  <a href="index.html">Go Back Home >></a>
+  <div class="container">
+    <h2><a href="https://cnwhalers.com">Add A Coin</a></h2>
+    <form id="myForm" method="POST" action="process-form.php">
+      <div class="form-container">
+       
+        <form method="post" action="process-form.php">
+          <div class="form-group">
+            <label>Name <span class="required-symbol">*</span></label>
+            <input type="text" name="name" required>
+          </div>
+          <div class="form-group">
+            <label>Symbol <span class="required-symbol">*</span></label>
+            <input type="text" name="symbol" required>
+          </div>
+          <div class="form-group">
+            <label>Description</label>
+            <textarea name="description"></textarea>
+          </div>
+          <div class="form-group">
+            <label>Chain <span class="required-symbol">*</span></label>
+            <select name="chain" required>
+              <option value="chain1">ETHEREUM</option>
+              <option value="chain2">BSC</option>
+              <option value="chain3">ALGORAND</option>
+              <option value="chain3">ARBITRUM</option>
+              <option value="chain3">AVAX</option>
+              <option value="chain3">SOLANA</option>
+              <option value="chain3">OPTIMISM</option>
+              <option value="chain3">DOGECHAIN</option>
+              <option value="chain3">LOOPNETWORK</option>
+              <option value="chain3">FTM</option>
+              <option value="chain3">ETHW</option>
+              <option value="chain3">CRO</option>
+              <option value="chain3">KU</option>
+              <option value="chain3">DRAC</option>
+              <option value="chain3">METIS</option>
+               <option value="chain3">ADA</option>
+                <option value="chain3">MOVR</option>
+                 <option value="chain3">CELO</option>
+                  <option value="chain3">HARMONY</option>
+                   <option value="chain3">KLAYTN</option>
+                    <option value="chain3">OKC</option>
+                    <option value="chain3">MILKOMEDA</option>
+                     <option value="chain3">ENECUUM</option>
+                      <option value="chain3">MUUCHAIN</option>
+                       <option value="chain3">OTHERS(~)</option>
+
+
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Contract address</label>
+            <input type="text" name="contract_address">
+          </div>
+          <div class="form-group">
+            <label>Website link</label>
+            <input type="url" name="website_link">
+          </div>
+          <div class="form-group">
+            <label>Telegram link <span class="required-symbol">*</span></label>
+            <input type="url" name="telegram_link" required>
+          </div>
+          <div class="form-group">
+            <label>Telegram Chinese</label>
+            <input type="url" name="telegram_chinese">
+          </div>
+          <div class="form-group">
+            <label>DexScreener Link</label>
+            <input type="url" name="dexscreener_link">
+          </div>
+          <div class="form-group">
+            <label>Btok link</label>
+            <input type="url" name="btok_link">
+          </div>
+          <div class="form-group">
+            <label>Twitter link</label>
+            <input type="url" name="twitter_link">
+          </div>
+          <div class="form-group">
+            <label>Discord</label>
+            <input type="url" name="discord_link">
+          </div>
+          <div class="form-group">
+            <label>Project logo <span class="required-symbol">*</span></label>
+            <input type="file" name="project_logo" required>
+          </div>
+          <div class="form-group">
+            <label> project logo url</label>
+            <input type="url" name="project_link" required>
+          </div>
+      <h3>Presale & Links</h3>
+      <div class="form-group">
+        <label>Whitelist link</label>
+        <input type="url" name="whitelist_link" required>
+      </div>
+      <div class="form-group">
+        <label>Presale time (Beijing time, UTC+8)</label>
+        <input type="text" name="presale_time" required>
+      </div>
+      <div class="form-group">
+        <label>Presale platform</label>
+        <select name="presale_platform" required>
+          <option value="display">Select...</option>
+          <option value="platform1">Pinksale</option>
+          <option value="platform2">DXSale</option>
+          <option value="platform3">Unicrypt</option>
+          <option value="platform4">OxBull</option>
+          <option value="platform5">Kommunitas</option>
+          <option value="platform7">Gempad</option>
+          <option value="platform8">Astronaut</option>
+          <option value="platform11">Other</option>
+
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Presale link</label>
+        <input type="url" name="presale_link" required>
+      </div>
+      <div class="form-group">
+        <label>Launch time (Beijing time, UTC+8)</label>
+        <input type="text" name="launch_time" required>
+      </div>
+      <div class="form-group">
+        <label>Launch platform</label>
+        <select name="launch_platform" required>
+          <option value="display">Select...</option>
+          <option value="platform1">Solid Lizard</option>
+          <option value="platform1">PancakeSwap</option>
+          <option value="platform1">UniSwap</option>
+          <option value="platform2">Ape Swap</option>
+          <option value="platform3">Crodex</option>
+          <option value="platform6">BiSwap</option>
+          <option value="platform3">Spooky Swap</option>
+          <option value="platform6">Alien.Fi</option>
+          <option value="platform3">Drac Swap</option>
+          <option value="platform6">Quick Swap</option>
+          <option value="platform6">TeddySwap</option>
+          <option value="platform3">Others</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Launch link</label>
+        <input type="url" name="launch_link" required>
+      </div>
+      <div class="form-submit">
+        <button type="submit">Submit</button>
+        <p>Can't wait? Any ad spot will get your project automatically listed!
+          Contact us now!<a href="https://t.me/@cnwhalers_support">@Cnwhalers</a></p>
+      </div>
+    </form>
+  </div>
+</body>
+
+</html>

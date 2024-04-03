@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles.css">
+    <title>Trust AI</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #111;
+            font-family: Arial, sans-serif;
+        }
+
+        #container {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            height: 100vh;
+        }
+
+        #image-container {
+            flex: 1;
+            padding: 20px;
+        }
+
+        #image-container img {
+            max-width: 70%;
+            height: auto;
+        }
+
+        #buttons-container {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            padding: 20px;
+        }
+
+        .button {
+            margin: 5px 0;
+            padding: 10px 20px;
+            background-color: rgb(103, 231, 248);
+            color: #ffffff;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            border-radius: 8px;
+        }
+
+        .button:hover {
+            background-color: #29e668;
+        }
+
+        @media screen and (max-width: 600px) {
+            #container {
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+
+            #image-container {
+                padding: 10px;
+            }
+
+            #image-container img {
+            max-width: 100%;
+            height: auto;
+        }
+            #buttons-container {
+                align-items: center;
+            }
+          
+        }
+
+        @media screen and (max-width: 600px) {
+            #container {
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+
+            #image-container {
+                padding: 10px;
+            }
+
+            #image-container img {
+            max-width: 100%;
+            height: auto;
+        }
+            #buttons-container {
+                align-items: center;
+                margin-bottom: 350px;
+            }
+          
+        }
+
+      
+    </style>
+</head>
+<nav class="navbar" data-aos="fade-up" data-aos-duration="600">
+  <div class="navbar-content">
+      <a href="#" class="navbar-brand">
+        <!-- C҉N҉W҉H҉A҉L҉E҉R҉S҉ --> CNwhalers
+  </a>
+    <ul class="navbar-menu">
+      <li class="navbar-item"><a href="#">Home</a></li>
+      <li class="navbar-item"><a href="add-coin.html">Add Coin</a></li>
+      <li class="navbar-item"><a href="#">Promote</a></li>
+      <i class="fa-solid fa-bars"></i>
+    </ul> 
+    
+    <div class="navbar-actions">
+     
+      <a href="https://t.me/cnwhalers_official" target="_blank">
+      <i class="fa-brands fa-telegram fa-bounce fa-xl"></i>
+      </a>
+
+      <a href="add-coin.html">
+      <button class="btn add-coin">Add Coin</button>
+    </a>
+      <button class="btn change-language" onclick="languageBtn()">中文</button>
+      
+
+      
+
+    </div>
+  </div>
+</nav>
+<body>
+    <div id="container">
+        <div id="image-container">
+            <img src="../images/trust-ai.jpg" alt="Image">
+        </div>
+        <div class="description-div">
+            <h3>Description</h3>
+            <p>Revolutionizing Smart Contract, NFT's and Staking</p>
+            <h4><strong>Chain: BSC</strong></h4>
+            <h4>Contract Address:</h4>
+            <p><strong>0x136256eeb743a4e308070aAb7B3de16587fc8d7</strong></p>
+        </div>
+        <div id="buttons-container">
+          <a href="https://trust-ai.io" target="_blank"><button class="button">View Website</button></a>
+          <a href="https://t.me/TRUST_AI_OFFICIAL" target="_blank"><button class="button">View Telegram </button></a>       
+            <!-- <a href="trust-dex.html" target="_blank"><button class="button">View DexScreener</button></a> -->
+  
+        </div>
+    </div>
+    <style>#dexscreener-embed{position:relative;width:100%;padding-bottom:125%;}@media(min-width:1400px){#dexscreener-embed{padding-bottom:65%;}}#dexscreener-embed iframe{position:absolute;width:100%;height:100%;top:0;left:0;border:0;}</style><div id="dexscreener-embed"><iframe src="https://dexscreener.com/bsc/0xE74957964006D46Bd198656Bd9F3d2a05AFe9747?embed=1&theme=dark"></iframe></div>
+    <script>
+     var totalClicks = 1640; // Total number of clicks
+        var lastClickTime = null; // Last click timestamp
+
+        function handleClick() {
+            var currentTime = new Date().getTime();
+
+            // Check if enough time has passed since the last click
+            if (lastClickTime === null || currentTime - lastClickTime >= 43200000) { // 12 hours = 43,200,000 milliseconds
+                lastClickTime = currentTime;
+                totalClicks++;
+
+                document.getElementById('clickCount').textContent = totalClicks;
+                document.getElementById('lastClickTime').textContent = new Date(lastClickTime).toLocaleString();
+            } else {
+                alert("You can click the button again in 12 hours.");
+            }
+        }
+  </script>
+</body>
+<footer>
+  <p> &copy; 2023 C҉N҉W҉H҉A҉L҉E҉R҉S҉ All Right Reserved.</p>
+  
+</html>

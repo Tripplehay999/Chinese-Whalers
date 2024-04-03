@@ -1,0 +1,9 @@
+[24-Jun-2023 22:39:51 UTC] PHP Warning:  Undefined array key "name" in /home/cnwhalers/public_html/addcoin.php on line 5
+[24-Jun-2023 22:39:51 UTC] PHP Warning:  Undefined array key "email" in /home/cnwhalers/public_html/addcoin.php on line 6
+[24-Jun-2023 22:39:51 UTC] PHP Warning:  Undefined array key "message" in /home/cnwhalers/public_html/addcoin.php on line 7
+[24-Jun-2023 22:42:39 UTC] PHP Warning:  Undefined array key "name" in /home/cnwhalers/public_html/addcoin.php on line 5
+[24-Jun-2023 22:42:39 UTC] PHP Warning:  Undefined array key "email" in /home/cnwhalers/public_html/addcoin.php on line 6
+[24-Jun-2023 22:42:39 UTC] PHP Warning:  Undefined array key "message" in /home/cnwhalers/public_html/addcoin.php on line 7
+[25-Jun-2023 03:19:49 UTC] PHP Warning:  Undefined array key "name" in /home/cnwhalers/public_html/addcoin.php on line 5
+[25-Jun-2023 03:19:49 UTC] PHP Warning:  Undefined array key "email" in /home/cnwhalers/public_html/addcoin.php on line 6
+[25-Jun-2023 03:19:49 UTC] PHP Warning:  Undefined array key "message" in /home/cnwhalers/public_html/addcoin.php on line 7
